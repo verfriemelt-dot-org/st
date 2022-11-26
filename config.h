@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static int borderpx = 2;
+static int borderpx = 8;
 static char *font = "mono:pixelsize=16:antialias=true:autohint=true";
 
 /*
@@ -127,10 +127,11 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
+ 
+static unsigned int defaultrcs = 257;
 unsigned int defaultfg = 259;
 unsigned int defaultbg = 258;
-static unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
+unsigned int defaultcs = 256;
 /*
  * Default shape of cursor
  * 2: Block ("█")
